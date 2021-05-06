@@ -1,17 +1,26 @@
-// import React, {useState} from "react";
-// const App = () => {
-//     const state = useState();
-//     const [count,setCount] = useState(0);
-//     // document.title = `chats(${count})`
-//     const IncNum = () => {
-//         setCount(count+5);
-//     }
-// return(
-// <div>
-// <h1> {count} </h1>
-// <button onClick = {IncNum}> Click Me </button>
-// </div>
+import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-// );
-// };
-// export default App;
+
+import Home from "./Home";
+import About from "./About";
+import Service from "./Service";
+import Contact from "./Contact";
+import Navbar from "./Navbar";
+import { Switch, Route, Redirect } from "react-router";
+const App = () => {
+    return(
+        <>
+        <Navbar />
+        <Switch>
+       <Route exact path="/" component={Home} />
+       <Route exact path="/about" component={About} />
+       <Route exact path="/service" component={Service} />
+       <Route exact path="/contact" component={Contact} />
+       <Redirect to="/" />
+        </Switch>
+        </>
+
+    );
+};
+export default App;

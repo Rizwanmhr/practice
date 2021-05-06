@@ -93,6 +93,7 @@ return(
                     onSelect = {deleteItems} />
                     );
                 })}
+                
             </ol>
 <br />
             </div>

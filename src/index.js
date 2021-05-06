@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
-
+import App from "./App";
 import "./index.css";
-
-import Todo from "./Todo";
-
-
-ReactDom.render(<Todo />,
-
+import { BrowserRouter } from "react-router-dom";
+ReactDom.render(
+    <>
+<BrowserRouter>
+<App />
+</BrowserRouter>
+</>,
     document.getElementById("root"));
-   
+
