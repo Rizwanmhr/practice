@@ -1,33 +1,41 @@
-// import dev from "../src/Images/dev.jpeg";
-// import app from "../src/Images/app.jpeg";
-// import and from "../src/Images/and.jpeg";
-// import re from "../src/Images/re.jpeg";
-// import mar from "../src/Images/mar.jpeg";
-// import soft from "../src/Images/soft.jpeg";
-// const Sdata = [
-//     {
-//         imgsrc: dev,
-//         title:"web development",
-//     },
-//     {
-//         imgsrc: app,
-//         title:"app development",
-//     },
-//     {
-//         imgsrc: and,
-//         title:"android development",
-//     },
-//     {
-//         imgsrc: re,
-//         title:"re development",
-//     },
-//     {
-//         imgsrc: mar,
-//         title:"marketing development",
-//     },
-//     {
-//         imgsrc: soft,
-//         title:"software development",
-//     },
-// ];
-// export default Sdata;
+import app from './images/app.jpg';
+import comp from './images/comp.jpg';
+import todo from './images/todo.jpg'
+import dez from './images/dez.jpg';
+import mar from './images/mar.jpg';
+import re from './images/re.jpg';
+
+
+
+
+
+const Sdata = [
+    {
+        imgsrc:app,
+        title:"App Development",
+    },
+    {
+        imgsrc:comp,
+        title:"Android Development",
+    },
+   
+    {
+        imgsrc:dez,
+        title:"Dez Development",
+    },
+    {
+        imgsrc:mar,
+        title:"Mern Development",
+    },
+    {
+        imgsrc:re,
+        title:"Soft Development",
+    },
+        {
+            imgsrc:todo,
+            title:'Todo',
+        },
+
+];
+
+export default Sdata;

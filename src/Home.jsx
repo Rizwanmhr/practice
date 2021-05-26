@@ -1,13 +1,11 @@
-import React from "react";
-import web from "../src/Images/vs.jpg"
-import {NavLink} from "react-router-dom";
-import Common from "./Common";
-const Home = () => {
-    return(
+import React from 'react'
+import Common from './Common';
+import vs from '../src/images/vs.jpg';
+export const Home = () => {
+    return (
         <>
-        <Common name='Grow your business' imgsrc={web} visit='/service' btname='Get Started' heading='We have team of talented developers making websites'  />
+      <Common name='Grow your Business with Maxenius Solution' heading='We have team of experianced developers' imgsrc={vs} visit='/services' btname='Contact Now' />
         </>
-
-    );
-};
+    )
+}
 export default Home;
